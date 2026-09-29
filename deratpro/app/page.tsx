@@ -1,7 +1,13 @@
+import Services from "@/components/Services";
+import WhyDeratPro from "@/components/WhyDeratPro";
+import HowItWorks from "@/components/HowItWorks";
+
 export default function Home() {
   return (
-    <main className="bg-primary p-10 text-white">
-      <h1 className="text-3xl font-bold text-accent">DeratPro</h1>
+    <main >
+      <Services />
+      <WhyDeratPro />
+      <HowItWorks />
     </main>
   );
 }
