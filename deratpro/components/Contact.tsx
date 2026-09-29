@@ -60,6 +60,7 @@ export default function Contact() {
                         <button type="submit" className="mt-4 w-full rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 hover:bg-primary/90"> Trimite </button>
                         {isSuccess && <p className="mt-2 text-sm text-green-500"> Mesajul a fost trimis cu succes! </p>}
                     </form>
+                    
                     <div className="flex flex-col justify-center rounded-2xl bg-secondary p-8 text-white md:p-10">
                         <h3 className="text-2xl font-bold"> Ai o urgență? </h3>
                         <p className="mt-2 text-slate-300"> Sună-ne direct la numărul de telefon de mai jos și vom fi acolo cât mai repede posibil. </p>
