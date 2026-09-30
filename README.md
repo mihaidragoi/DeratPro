@@ -2,23 +2,27 @@
 
 Site de prezentare modern, tip landing page, cu cinci secțiuni pentru o firmă fictivă ce oferă serviciile: deratizare, dezinfecție și desinsecție.
 
-Link de accesare: https://derat-pro-nine.vercel.app/ 
+**Link de accesare:** https://derat-pro-nine.vercel.app/ 
 
-Tehnologii utilizate: Next.js, TypeScript, Tailwind CSS, @react-three/fiber (Three.js), lucide-react, Vercel.
+**Tehnologii utilizate:** Next.js, TypeScript, Tailwind CSS, @react-three/fiber (Three.js), lucide-react, Vercel.
+
+## Rularea locală
 
 Pentru a rula local trebuie efectuați următorii pași: 
     1. npm install
     2. npm run dev
     3. accesare: http://localhost:3000
 
-Design:
-    Tool utilizat: https://stitch.withgoogle.com/
-    Prompt-uri utilizate: 
+## Design și Tool utilizat
 
-        INPUT: 
+**Tool utilizat:** https://stitch.withgoogle.com/
+
+### Prompt-uri utilizate: 
+
+***INPUT:*** 
         "Design a modern, trustworthy one page website for "DeratPro", a Romanian service company offering pest control ("Deratizare"), insect control ("Dezinsecție") and disinfection ("Dezinfecție") for residential and commercial clients. Language : Romanian. Sections are stacked vertically and contains: 1. Hero - a full-screen dark background with some particles as a placeholder for a 3D animation. In the center will be the company name "DeratPro" and a button "Cere ofertă"; 2. Servicii- contains the three services, with a short description , title and icon ; 3. De ce DeratPro - contains 3 or 4 advantages with icons (example: fast intervention, approved substances, licensed staff, guarantee, etc.) ; 4. Cum funcționează - contains three numbered steps (Ne suni -> Evaluare -> Intervenție); 5. Contact - a simple form with name, phone, message fileds and a submit button. As a style : clean, proffesional, dark hero, light sections, green or similar colors, rounded corners, hight text contrast, mobile-first and responsive (it should be responsible for desktop as well)."
 
-        OUTPUT: 
+***OUTPUT:*** 
         "Am creat designul one-page complet și responsive pentru DeratPro - Servicii DDD Autorizate, respectând toate cerințele:
         Structura paginii și elementele implementate:
         Hero Section (Dark background & Particle effect):
@@ -38,10 +42,10 @@ Design:
         Stil vizual & Responsive:
         Mobile-first, colțuri rotunjite (rounded-2xl, rounded-xl), paletă curată verde sanitar/eco (#10B981 / #0D5C3A), contrast optim de lizibilitate și adaptabilitate completă pentru ecrane desktop și mobile."
 
-        INPUT:
+***INPUT:***
         "Create the desktop version of this same page, using the same design system."
 
-        OUTPUT:
+***OUTPUT:***
         "Am generat versiunea desktop a paginii one-page pentru DeratPro, utilizând același sistem de design (DeratPro Clinical Sanitary), aceleași texte și aceeași identitate vizuală ca pe versiunea de mobil:
         Adaptări specifice pentru Desktop:
         Header & Navigație Desktop:
@@ -61,27 +65,28 @@ Design:
 
         * se pot găsi și variantele propuse direct pe GitHub, în folderul docs/design, unde am atașat atât varianta pentru mobile, cât și varianta desktop.
 
-    Ce am păstrat și ce am schimbat?
-        În urma prompt-ului oferit tool-ului AI, în care am descris cât mai bine viziunea mea asupra site-ului, am efectuat următoarele modificări:
-            -> am eliminat partea de tarife, întrucât nu era parte a cerinței temei și ar fi adus cod în plus inutil.
-            -> am simplificat secțiunea Hero, care acum conține doar numele companiei, cu o scurtă descriere, animația 3D și butonul CTA.
-            -> am simplificat secțiunea Contact, care conține doar formularul simplu, împreună cu datele de contact în caz de urgență.
-            -> am renunțat la butoanele din secțiunea Servicii. Dacă utilizatorul a trecut de secțiunea Hero, intenția sa este de informare, iar butoanele suplimentare ar fi încărcat interfața inutil.
-            -> am eliminat partea de cont și partea de "DeratPro Servicii DDD".
-        Am ales să păstrez paleta de culori, animația pe care am implementat-o ulterior și ideile de bază din design-ul propus. Acest lucru asigură claritatea, lizibilitatea și impactul asupra utilizatorilor.
+## Ce am păstrat și ce am schimbat?
+În urma prompt-ului oferit tool-ului AI, în care am descris cât mai bine viziunea mea asupra site-ului, am efectuat următoarele modificări:
+    -> am eliminat partea de tarife, întrucât nu era parte a cerinței temei și ar fi adus cod în plus inutil.
+    -> am simplificat secțiunea Hero, care acum conține doar numele companiei, cu o scurtă descriere, animația 3D și butonul CTA.
+    -> am simplificat secțiunea Contact, care conține doar formularul simplu, împreună cu datele de contact în caz de urgență.
+    -> am renunțat la butoanele din secțiunea Servicii. Dacă utilizatorul a trecut de secțiunea Hero, intenția sa este de informare, iar butoanele suplimentare ar fi încărcat interfața inutil.
+    -> am eliminat partea de cont și partea de "DeratPro Servicii DDD".
 
-    Animația Hero  
-        Animația 3D este compusă dintr-un icosaedru și un sistem de particule, optimizate pentru performanță. Generarea pozițiilor particulelor este optimizată cu useMemo pentru a evita recalculările inutile la fiecare cadru și a preveni blocajele de performanță.
+Am ales să păstrez paleta de culori, animația pe care am implementat-o ulterior și ideile de bază din design-ul propus. Acest lucru asigură claritatea, lizibilitatea și impactul asupra utilizatorilor.
 
-    Decizii și compromisuri
-        - validare efectuată manual, pentru a înțelege și controla logica 
-        - conținutul se află în data/content.ts, în timp ce in folderul components se află fiecare secțiune, ce afișează conținutul corespunzător
-        - formularul nu trimite date, doar le verifică și le validează printr-un mesaj corespunzător
-        - datele firmei sunt fictive, nu există în realitate
+## Animația Hero  
+    Animația 3D este compusă dintr-un icosaedru și un sistem de particule, optimizate pentru performanță. Generarea pozițiilor particulelor este optimizată cu useMemo pentru a evita recalculările inutile la fiecare cadru și a preveni blocajele de performanță.
+
+## Decizii și compromisuri
+    - validare efectuată manual, pentru a înțelege și controla logica 
+    - conținutul se află în data/content.ts, în timp ce in folderul components se află fiecare secțiune, ce afișează conținutul corespunzător
+    - formularul nu trimite date, doar le verifică și le validează printr-un mesaj corespunzător
+    - datele firmei sunt fictive, nu există în realitate
     
-    Tool-uri AI
-        Așa cum am zis mai sus, am utilizat Stitch pentru realizarea design-ului. Pe lângă acesta, am mai folosit Claude și Gemini pentru a obține schelete de cod de pornire, explicații suplimentare și code-review. 
+## Tool-uri AI
+    Așa cum am zis mai sus, am utilizat Stitch pentru realizarea design-ului. Pe lângă acesta, am mai folosit Claude și Gemini pentru a obține schelete de cod de pornire, explicații suplimentare și code-review. 
 
-        Ceea ce am făcut eu a fost să învăț. Am corectat eventuale bug-uri vizuale, am implementat logica din spate și am asigurat ca varianta finală a produsului să fie la o calitate cât mai ridicată. 
+    Ceea ce am făcut eu a fost să învăț. Am corectat eventuale bug-uri vizuale, am implementat logica din spate și am asigurat ca varianta finală a produsului să fie la o calitate cât mai ridicată. 
         
-        Împreună cu aceste tool-uri am reușit să construiesc un site from scratch și să mă dezvolt în această direcție. Această experiență mi-a stârnit interesul asupra acestei zone din marea industrie IT. Mă bucur că am avut ocazia de a acumula noi cunoștințe ale unor astfel de tehnologii.
+    Împreună cu aceste tool-uri am reușit să construiesc un site from scratch și să mă dezvolt în această direcție. Această experiență mi-a stârnit interesul asupra acestei zone din marea industrie IT. Mă bucur că am avut ocazia de a acumula noi cunoștințe ale unor astfel de tehnologii.
