@@ -67,11 +67,12 @@ Pentru a rula local trebuie efectuați următorii pași:
 
 ## Ce am păstrat și ce am schimbat?
 În urma prompt-ului oferit tool-ului AI, în care am descris cât mai bine viziunea mea asupra site-ului, am efectuat următoarele modificări:
--> am eliminat partea de tarife, întrucât nu era parte a cerinței temei și ar fi adus cod în plus inutil.
--> am simplificat secțiunea Hero, care acum conține doar numele companiei, cu o scurtă descriere, animația 3D și butonul CTA.
--> am simplificat secțiunea Contact, care conține doar formularul simplu, împreună cu datele de contact în caz de urgență.
--> am renunțat la butoanele din secțiunea Servicii. Dacă utilizatorul a trecut de secțiunea Hero, intenția sa este de informare, iar butoanele suplimentare ar fi încărcat interfața inutil.
--> am eliminat partea de cont și partea de "DeratPro Servicii DDD".
+
+* am eliminat partea de tarife, întrucât nu era parte a cerinței temei și ar fi adus cod în plus inutil.
+* am simplificat secțiunea Hero, care acum conține doar numele companiei, cu o scurtă descriere, animația 3D și butonul CTA.
+* am simplificat secțiunea Contact, care conține doar formularul simplu, împreună cu datele de contact în caz de urgență.
+* am renunțat la butoanele din secțiunea Servicii. Dacă utilizatorul a trecut de secțiunea Hero, intenția sa este de informare, iar butoanele suplimentare ar fi încărcat interfața inutil.
+* am eliminat partea de cont și partea de "DeratPro Servicii DDD".
 
 Am ales să păstrez paleta de culori, animația pe care am implementat-o ulterior și ideile de bază din design-ul propus. Acest lucru asigură claritatea, lizibilitatea și impactul asupra utilizatorilor.
 
