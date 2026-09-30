@@ -62,7 +62,7 @@ function HeroParticles() {
 
 export default function Hero() {
     return (
-        <section id="hero" className="relative flex min-h-svh items-center overflow-hidden bg-secondary py-20">
+        <section id="hero" className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-secondary py-20">
             <div className="absolute inset-0 z-0" aria-hidden="true">
                 <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 5], fov: 75 }}>
                     <ambientLight intensity={0.5} />
