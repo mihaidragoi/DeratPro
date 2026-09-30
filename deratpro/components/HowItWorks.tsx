@@ -1,4 +1,4 @@
-import {steps} from "@/data/content";
+import { steps } from "@/data/content";
 
 export default function HowItWorks() {
     return (
@@ -14,7 +14,7 @@ export default function HowItWorks() {
                                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary font-bold text-white"> {number} </span>
                                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50">
                                     <Icon className="h-6 w-6 text-primary" aria-hidden="true" />
-                                 </div>
+                                </div>
                             </div>
                             <h3 className="mb-2 text-xl font-semibold text-secondary">{title}</h3>
                             <p className="text-slate-600">{description}</p>

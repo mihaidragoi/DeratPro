@@ -7,7 +7,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <h2 className="mb-12 text-center text-3xl font-bold tracking-tight text-secondary md:text-4xl"> Serviciile noastre </h2>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {services.map(({ title, description, icon: Icon, points }) => (
             <article
               key={title}

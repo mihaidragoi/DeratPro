@@ -10,9 +10,8 @@ import {
     ClipboardCheck,
     Wrench,
     type LucideIcon,
-} from "lucide-react"; // importare icons
+} from "lucide-react"; 
 
-//tipuri date
 
 export type Service = {
     title : string;
@@ -34,7 +33,6 @@ export type Step = {
     icon : LucideIcon;
 };
 
-// informatii generale site, servicii, contact
 
 export const siteInfo = {
     name : "DeratPro",
@@ -43,13 +41,6 @@ export const siteInfo = {
     phone : "+40 123 456 789",
     email : "info@deratpro.ro"
 };
-
-export const navLinks = [
-    {label:"Servicii", href:"#servicii"},
-    {label:"De ce DeratPro?", href:"#de-ce-deratpro"},
-    {label:"Cum funcționează?", href:"#cum-functioneaza"},
-    {label:"Contact", href:"#contact"}
-];
 
 export const services : Service[] = [
     {
