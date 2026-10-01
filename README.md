@@ -1,6 +1,6 @@
 # DeratPro
 
-Site de prezentare modern, tip landing page, cu cinci secțiuni pentru o firmă fictivă ce oferă serviciile: deratizare, dezinfecție și desinsecție.
+Site de prezentare modern, tip landing page, cu cinci secțiuni pentru o firmă fictivă ce oferă serviciile: deratizare, dezinfecție și dezinsecție.
 
 **Link de accesare:** https://derat-pro-nine.vercel.app/ 
 
@@ -9,9 +9,9 @@ Site de prezentare modern, tip landing page, cu cinci secțiuni pentru o firmă 
 ## Rularea locală
 
 Pentru a rula local trebuie efectuați următorii pași: 
-    1. npm install
-    2. npm run dev
-    3. accesare: http://localhost:3000
+1. npm install
+2. npm run dev
+3. accesare: http://localhost:3000
 
 ## Design și Tool utilizat
 
@@ -77,13 +77,13 @@ Pentru a rula local trebuie efectuați următorii pași:
 Am ales să păstrez paleta de culori, animația pe care am implementat-o ulterior și ideile de bază din design-ul propus. Acest lucru asigură claritatea, lizibilitatea și impactul asupra utilizatorilor.
 
 ## Animația Hero  
-    Animația 3D este compusă dintr-un icosaedru și un sistem de particule, optimizate pentru performanță. Generarea pozițiilor particulelor este optimizată cu useMemo pentru a evita recalculările inutile la fiecare cadru și a preveni blocajele de performanță.
+Animația 3D este compusă dintr-un icosaedru și un sistem de particule, optimizate pentru performanță. Generarea pozițiilor particulelor este optimizată cu useMemo pentru a evita recalculările inutile la fiecare re-randare și a preveni blocajele de performanță.
 
 ## Decizii și compromisuri
-    - validare efectuată manual, pentru a înțelege și controla logica 
-    - conținutul se află în data/content.ts, în timp ce in folderul components se află fiecare secțiune, ce afișează conținutul corespunzător
-    - formularul nu trimite date, doar le verifică și le validează printr-un mesaj corespunzător
-    - datele firmei sunt fictive, nu există în realitate
+* validare efectuată manual, pentru a înțelege și controla logica 
+* conținutul se află în data/content.ts, în timp ce in folderul components se află fiecare secțiune, ce afișează conținutul corespunzător
+* formularul nu trimite date, doar le verifică și le validează printr-un mesaj corespunzător
+* datele firmei sunt fictive, nu există în realitate
     
 ## Tool-uri AI
 Așa cum am zis mai sus, am utilizat Stitch pentru realizarea design-ului. Pe lângă acesta, am mai folosit Claude și Gemini pentru a obține schelete de cod de pornire, explicații suplimentare și code-review. 
