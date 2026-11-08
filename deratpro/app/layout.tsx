@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -29,10 +30,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>
+<body>
+  <div className="fixed right-4 top-4 z-50 flex gap-2">
+        <LanguageToggle />
         <ThemeToggle />
-        {children}
-      </body>
-    </html>
+      </div>
+      {children}
+    </body>
+  </html>
   );
 }

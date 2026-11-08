@@ -2,6 +2,7 @@
 
 import { Zap } from "lucide-react";
 import { siteInfo } from "@/data/content";
+import { useLanguage } from "@/lib/language";
 import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import type { Mesh, Points } from "three";
@@ -33,7 +34,6 @@ function createPositions(count: number) {
     return positions;
 }
 
-
 function HeroParticles() {
     const particlesRef = useRef<Points>(null);
     const particlesPosition = useMemo(() => createPositions(PARTICLE_COUNT), []);
@@ -58,9 +58,9 @@ function HeroParticles() {
     );
 }
 
-
-
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section id="hero" className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-secondary py-20">
             <div className="absolute inset-0 z-0" aria-hidden="true">
@@ -72,14 +72,13 @@ export default function Hero() {
                 </Canvas>
             </div>
 
-
             <div className="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-8">
                 <div className="flex flex-col items-center justify-center gap-6 text-center">
                     <h1 className="text-3xl font-bold tracking-tight text-white md:text-5xl"> {siteInfo.name} </h1>
-                    <p className="max-w-2xl text-lg text-white/80"> {siteInfo.tagline} </p>
+                    <p className="max-w-2xl text-lg text-white/80"> {t.hero.tagline} </p>
                     <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary shadow-lg transition-colors duration-300 hover:bg-slate-100">
                         <Zap className="h-4 w-4" aria-hidden="true" />
-                        {siteInfo.ctaLabel}
+                        {t.hero.cta}
                     </a>
                 </div>
             </div>
